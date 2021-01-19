@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li,
+a,
+button {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: #24252A;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    color: whitesmoke;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    margin-left: 50px;
+    padding: 9px 25px;
+    margin-right: 50px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+section {
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    height: 100vh;
+    background-color: #59405C;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#home {
+    background-color: #59405C;
+}
+
+#about {
+    background-color: #ED6663;
+}
+
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 17rem;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2rem;
+    /* centered form inside body */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-field {
+    padding: 1rem;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    outline: none;
+    border-radius: .1rem;
+}
+
+.input-field:hover,
+.input-field:focus {
+    background-color: rgb(210, 210, 210);
+}
+
+.submit-btn {
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    background-color: #222;
+    color: #fff;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: coral;
+}
+
+.close-btn {
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    background-color: #222;
+    color: #fff
+}
+
+.close-btn:hover {
+    background-color: coral;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}

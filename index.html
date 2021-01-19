@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Demo</title>
+</head>
+
+<body>
+    <section id="home">
+        <header>
+            <img class="logo" src="" alt="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="#"><button onclick="loginBtnClick()">login</button></a>
+        </header>
+        <h1 id="homecontain">This Is Home</h1>
+    </section>
+
+    <section id="about">
+        <h1>This Is About</h1>
+    </section>
+
+    <div id="login" class="hide">
+        <form class="popup-form" onsubmit="validateForm()">
+            <h2>Login Here</h2>
+            <input class="input-field" type="email" name="email" placeholder="Email" required />
+            <input class="input-field" type="password" name="password" placeholder="Password" required />
+            <div>
+                <input class="input-field submit-btn" type="submit" name="submit" value="submit">
+                <input class="input-field close-btn" type="button" name="cancel" value="cancel" onclick="closeBtnClick()">
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
